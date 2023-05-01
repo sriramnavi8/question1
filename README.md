@@ -3,7 +3,7 @@
 ## Regulator
 - Choose of LT3010 LDO volatge regualtor for the given project, this component was chosen from the website suggested from apply the circuit parameters. Datasheet for which is attached.
 
-![image](https://user-images.githubusercontent.com/114356023/235420108-778e96f2-1322-46ca-9bd9-9924904c83e6.png)
+    ![image](https://user-images.githubusercontent.com/114356023/235420108-778e96f2-1322-46ca-9bd9-9924904c83e6.png)
 
 ## Calculations
 1. ![image](https://user-images.githubusercontent.com/114356023/235420275-c2e62735-2461-48a7-b590-db5f4ebd965c.png)
@@ -42,4 +42,4 @@
 - Similarly for the Line regulation, calculate the change in the output voltage for the given change in input voltage, and using the formula, output the percentage of the line regulation.
 - Second part of the code includes the calculatuion for the temperature rise above the ambient temperature, formula for which is given above( formula 1).
 - Read the inputs such as maximum current, maximum input voltage and ground pin current from the user and by using the formula calculate the rise in temperature above the ambient temperature.
--> Also calculate the maximum temperature which is the summation of temperature rise and the ambient temperature.
+- Also calculate the maximum temperature which is the summation of temperature rise and the ambient temperature.
