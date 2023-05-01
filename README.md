@@ -5,6 +5,13 @@
 
     ![image](https://user-images.githubusercontent.com/114356023/235420108-778e96f2-1322-46ca-9bd9-9924904c83e6.png)
 
+## Components
+1. LT3010
+2. R1 = 100K ohm
+3. R2 = 41.02k ohm
+4. C1 = 0.1uF
+5. C = 0.5uF
+
 ## Calculations
 1. ![image](https://user-images.githubusercontent.com/114356023/235420275-c2e62735-2461-48a7-b590-db5f4ebd965c.png)
 
@@ -12,7 +19,7 @@
 
 2. ![image](https://user-images.githubusercontent.com/114356023/235420428-0c448e76-8cef-4c97-9f32-d161caaab8e3.png)
 
-    -  Choose R1 =100k, which should be less than 250k to minimize the errors in the output voltage caused by the ADJ pin bias current as per datasheet.
+    -  Choose R1 =100k, whUpdate README.mdich should be less than 250k to minimize the errors in the output voltage caused by the ADJ pin bias current as per datasheet.
     -  Choose C1= 0.1uF, Because the impedance of C1 at 10khz should be less than R1 as per the datasheet. This capacitance is used for the stabilization purpose.
     - From the formula number 2, we get the value of R2 as 41.02k for the output voltage of 1.8V.
 3. ![image](https://user-images.githubusercontent.com/114356023/235420545-f7552ef8-c0f8-4d7b-9683-c93fa7afd87a.png)
@@ -43,3 +50,17 @@
 - Second part of the code includes the calculatuion for the temperature rise above the ambient temperature, formula for which is given above( formula 1).
 - Read the inputs such as maximum current, maximum input voltage and ground pin current from the user and by using the formula calculate the rise in temperature above the ambient temperature.
 - Also calculate the maximum temperature which is the summation of temperature rise and the ambient temperature.
+
+## Table of suitable parts
+| IC Number | Input Voltage Range | Output Current | Output Voltage Range | Dropout Voltage |
+|-----------|---------------------|----------------|----------------------|-----------------|
+| LT3010    | 3V - 80V            | 50mA           | 1.275V - 60V         | 300mV           |
+
+## Waveforms
+1. Turn On Waveform
+    ![image](Turn_ON_waveform.png)
+
+1. Turn Off Waveform
+    ![image](Turn_OFF_waveform.png)
+
+
